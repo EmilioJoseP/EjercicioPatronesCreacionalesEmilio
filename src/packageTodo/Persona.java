@@ -27,6 +27,46 @@ public class Persona {
 		return this.colorOjos;
 	}
 	
+	public String toString() {
+		String paraDevolver = "";
+		
+		paraDevolver += "Nombre: " + this.nombre;
+		
+		if (this.colorOjos != null) {
+			paraDevolver += ", Color de Ojos: " + this.colorOjos;
+		} 
+		
+		if (this.colorPelo != null) {
+			paraDevolver += ", Color de Pelo: " + this.colorPelo;
+		} 
+		
+ 		if (this.tipoPelo != null) {
+			paraDevolver += ", Tipo de Pelo: " + this.tipoPelo;
+		}
+ 		
+ 		if (this.tipoOjos != null) {
+			paraDevolver += ", Tipo de ojos: " + this.tipoOjos;
+		}
+ 		
+ 		if (this.edad != 0) {
+			paraDevolver += ", Edad: " + this.edad;
+		}
+ 		
+ 		if (this.ciudad != null) {
+			paraDevolver += ", Ciudad: " + this.ciudad;
+		}
+ 		
+ 		if (this.peso != 0) {
+			paraDevolver += ", Peso: " + this.peso;
+		}
+ 		
+ 		if (this.altura != 0) {
+			paraDevolver += ", altura: " + this.altura;
+		}
+		
+		return paraDevolver;
+	}
+	
 	public void setColorOjos(String colorOjos) {
 		this.colorOjos = colorOjos;
 	}
